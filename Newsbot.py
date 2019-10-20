@@ -38,7 +38,7 @@ def getanekdot():
 def handle_text(message):
     msg=message.text
     msg=msg.lower()
-    if (u'новости' in msg):
+    if (u'/новости' in msg):
         try:
             bot.send_message(message.from_user.id, getnews())
         except:
@@ -47,7 +47,7 @@ def handle_text(message):
         bot.send_message(message.chat.id, 'Привет! Рад тебя видеть.')
     elif (u'пока' in msg):
         bot.send_message(message.chat.id, 'Прощай, возвращайся еще!')
-    elif (u'анекдот' in msg):
+    elif (u'/анекдот' in msg):
         try:
             bot.send_message(message.from_user.id, getanekdot())
         except:
