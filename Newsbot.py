@@ -3,7 +3,6 @@ import requests
 import config
 from bs4 import BeautifulSoup
 import bs4
-import vk
 bot = telebot.TeleBot('761870984:AAHlqKr_6N3IwBafFufz_gq4e3U8cVW-khw')
 print(bot.get_me())
 def log(message, answer):
