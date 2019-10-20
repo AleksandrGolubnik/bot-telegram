@@ -1,6 +1,5 @@
 import telebot
 import requests
-import config
 from bs4 import BeautifulSoup
 import bs4
 bot = telebot.TeleBot('761870984:AAHlqKr_6N3IwBafFufz_gq4e3U8cVW-khw')
